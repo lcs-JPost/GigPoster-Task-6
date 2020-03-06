@@ -46,9 +46,48 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 // Begin your solution here...
 
 
-// change the background colour
+// change the background color
 canvas.fillColor = lightBlue
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
+
+// begin with the frist shape
+//translate to the coordinates
+canvas.translate(to: Point(x: 200, y: 400))
+
+// activate borders
+canvas.fillColor = offWhite
+canvas.drawShapesWithBorders = true
+canvas.borderColor = offWhite
+canvas.defaultBorderWidth = 10
+canvas.drawShapesWithFill = false
+
+// use a loop to draw the first shape
+//define a variable for the diameter
+var diameter = 10
+
+for _ in 1...9 {
+    print(diameter)
+    canvas.drawEllipse(at: Point(x: 0, y: 0), width: diameter, height: diameter)
+    diameter += 48
+}
+
+//change the color
+canvas.borderColor = translucentPink
+
+//translate 100 points upwards
+canvas.translate(to: Point(x: 0, y: 100))
+//define a variable for the diameter
+var diameter2 = 10
+
+for _ in 1...9 {
+    print(diameter2)
+    canvas.drawEllipse(at: Point(x: 0, y: 0), width: diameter2, height: diameter2)
+    diameter2 += 48
+}
+
+// write the text
+
 
 
 
