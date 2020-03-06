@@ -50,6 +50,15 @@ let black = Color(hue: 0, saturation: 100, brightness: 0, alpha: 100)
 canvas.fillColor = lightBlue
 canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
 
+// write the text
+canvas.drawText(message: "superdrag", at: Point(x: 15, y: 100), size: 50)
+
+canvas.drawText(message: "with\nthe shambles\nand lifter", at: Point(x: 15, y: 20), size: 9)
+
+canvas.drawText(message: "thursday\njune 13 1996 / 8:30\nno age limit", at: Point(x: 110, y: 20), size: 9)
+
+canvas.drawText(message: "at briek by briek\n1130 buenos avenue\nsan diego, ca", at: Point(x: 285, y: 20), size: 9)
+
 
 // begin with the frist shape
 //translate to the coordinates
@@ -86,7 +95,7 @@ for _ in 1...9 {
     diameter2 += 48
 }
 
-// write the text
+
 
 
 
